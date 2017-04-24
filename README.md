@@ -1,5 +1,4 @@
 # Particle_System:
-The repository for a particle system.
 The fundamentals of this code came from "https://www.sfml-dev.org/tutorials/2.0/graphics-vertex-array.php".
 In this code you will find many options to play with the particle system.
 !READ THE DOCUMENTATION OF THE HEADER FILES FOR MORE INFORMATION!
