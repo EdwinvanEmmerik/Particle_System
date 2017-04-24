@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1487183888 source:e:\users\molomono\dropboxschool\dropbox\dropbox\guitarpro\particles\main.cpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<math.h>
+
+1487251146 
+
+1489057503 source:c:\users\eigenaar\dropbox\guitarpro\particles\main.cpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<math.h>
+
+1487251146 source:/home/molomono/Dropbox/Guitarpro/Particles/main.cpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<math.h>
+
+1489067610 source:c:\users\eigenaar\documents\codeblocks\particles\particlesystem.cpp
+	"ParticleSystem.h"
+
+1489068915 c:\users\eigenaar\documents\codeblocks\particles\particlesystem.h
+	"MassObject.h"
+	<iostream>
+	<vector>
+	<math.h>
+	<SFML/Graphics.hpp>
+
+1489059668 c:\users\eigenaar\documents\codeblocks\particles\massobject.h
+	<SFML/Graphics.hpp>
+
+1489068854 source:c:\users\eigenaar\documents\codeblocks\particles\main.cpp
+	"ParticleSystem.h"
+	"ViewHandler.h"
+
+1489059865 c:\users\eigenaar\documents\codeblocks\particles\viewhandler.h
+
