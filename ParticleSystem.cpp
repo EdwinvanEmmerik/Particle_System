@@ -1,5 +1,5 @@
 #include "ParticleSystem.h"
-
+#include "Particles_defines.h"
 void ParticleSystem::get_radius_to_youranus(const unsigned i){
     for(unsigned j=0; j< massobject.size(); j++){
         m_particles[i].radiustoyouranus[j] = sqrt(pow((m_vertices[i].position.x-massobject[j].position.x), 2) + pow(((m_vertices[i].position.y-massobject[j].position.y)), 2));
@@ -39,7 +39,6 @@ void ParticleSystem::get_new_velocity(const unsigned i){
         }
         m_particles[i].newvelocity += m_particles[i].gravitypull[j];
     }
-
 }
 void ParticleSystem::change_velocity(const unsigned i){
         get_radius_to_youranus(i);

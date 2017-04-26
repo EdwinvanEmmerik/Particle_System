@@ -35,6 +35,7 @@
 		<Unit filename="MassObject.h" />
 		<Unit filename="ParticleSystem.cpp" />
 		<Unit filename="ParticleSystem.h" />
+		<Unit filename="Particles_defines.h" />
 		<Unit filename="ViewHandler.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
