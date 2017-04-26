@@ -18,10 +18,6 @@
 #include <math.h>
 #include <SFML/Graphics.hpp>
 
-
-#define viewheight 4000
-#define viewwidth 3000
-
 #define PI 3.14159265356
 #define euler 2.7182818284590452353602875
 #define sim_speed 0.0000025

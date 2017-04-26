@@ -5,6 +5,7 @@
             and translate in x and y coordinates of the created window by generating a specific view.
 */
 #define WALKSPEED 10
+
 class ViewHandler{
 public:
     ViewHandler(){

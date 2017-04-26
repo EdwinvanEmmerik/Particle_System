@@ -1,5 +1,6 @@
 #include "ParticleSystem.h"
 #include "ViewHandler.h"
+
 int main()
 {
     // create the window
@@ -8,7 +9,7 @@ int main()
     ViewHandler viewH;
     viewH.setView(1);
     // create the particle system
-    ParticleSystem particles(20000);
+    ParticleSystem particles(10000);
 
     //Creation of a Mass Object in the center of the screen
     particles.create_massobject(sf::Vector2f((float)width      /2,
@@ -16,7 +17,7 @@ int main()
                                                  20000000,
                                                  1.5);
     // Creation of particle clusters
-    particles.create_particle_clusters(10, 0.05, 100000, 200, PI, 0);
+    particles.create_particle_clusters(10, 0.1, 100000, 300, PI, 0);
 
     // run the main loop
     while (window.isOpen())
