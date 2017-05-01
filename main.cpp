@@ -9,15 +9,15 @@ int main()
     ViewHandler viewH;
     viewH.setView(1);
     // create the particle system
-    ParticleSystem particles(10000);
+    ParticleSystem particles(20000);
 
-    //Creation of a Mass Object in the center of the screen
+    // Creation of a Mass Object in the center of the screen
     particles.create_massobject(sf::Vector2f((float)width      /2,
                                              (float)height     /2),
                                                  20000000,
                                                  1.5);
     // Creation of particle clusters
-    particles.create_particle_clusters(10, 0.1, 100000, 300, PI, 0);
+    particles.create_particle_clusters(8, 0.05, 100000, 300, PI, 2);
 
     // run the main loop
     while (window.isOpen())
