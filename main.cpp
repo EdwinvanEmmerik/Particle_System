@@ -10,14 +10,14 @@ int main()
     viewH.setView(1);
     // create the particle system
     ParticleSystem particles(20000);
-
     // Creation of a Mass Object in the center of the screen
     particles.create_massobject(sf::Vector2f((float)width      /2,
                                              (float)height     /2),
                                                  20000000,
                                                  1.5);
+    particles.create_massobject(sf::Vector2f(sf::Mouse::getPosition(window)), 400000000, 3.0);
     // Creation of particle clusters
-    particles.create_particle_clusters(8, 0.05, 100000, 300, PI, 2);
+    particles.create_particle_clusters(50, 0.05, 100000, 300, PI, 0);
 
     // run the main loop
     while (window.isOpen())
@@ -31,6 +31,7 @@ int main()
             if(event.type == sf::Event::KeyPressed)
                 viewH.alterView();
         }
+        particles.massobject[1].position = sf::Vector2f(sf::Mouse::getPosition(window));
         particles.update();
         // draw it
         window.clear();

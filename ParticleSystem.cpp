@@ -127,7 +127,7 @@ void ParticleSystem::update_color(const unsigned i){
     //m_vertices[i].color = sf::Color(255-(int)(ratio*500)%255, (int)(ratio*500)%255, (int)(sin((float)i)*255), 255-(int)(ratio3*500)%255+150);
     //Default
     //m_vertices[i].color = sf::Color(255-(int)(ratio*500)%255, 255-(int)(ratio*500)%255, (int)(ratio*255), 255-(int)(ratio3*500)%255);
-    m_vertices[i].color = sf::Color(pow((int)(ratio*500)%255,1), pow(255-(int)(ratio*500)%255,3), pow(255-(int)(ratio*500)%255,2) ,150);
+    m_vertices[i].color = sf::Color(pow((int)(ratio*500)%255,1.2), pow(255-(int)(ratio*500)%255,3), pow(255-(int)(ratio*500)%255,2) ,150);
 }
 /** \brief This function gives a starting position for each particle divided over the chosen number of clusters. It also makes it able to change
             the reaction to the velocity setting to a particle.
@@ -158,8 +158,8 @@ void ParticleSystem::create_particle_clusters(const unsigned cluster_count, cons
             m_particles[index].velocity = sf::Vector2f(startvelocity*  -cos(2*PI/(float)cluster_count*(float)clusterIndex+velocity_fase_offset),
                                                        startvelocity*   sin(2*PI/(float)cluster_count*(float)clusterIndex+velocity_fase_offset));
             }if(s_velocity_type ==2){// linear
-            m_particles[index].velocity = sf::Vector2f(startvelocity*  cos(velocity_fase_offset+ i),
-                                                       startvelocity*  sin(velocity_fase_offset+ i));
+            m_particles[index].velocity = sf::Vector2f(startvelocity*  cos(velocity_fase_offset + i),
+                                                       startvelocity*  -sin(velocity_fase_offset + i));
             }
             m_vertices[index].position = m_emitter+(sf::Vector2f((cos(index)*compact*counter)+viewwidth,
                                                                  (sin(index)*compact*counter)+viewheight));
